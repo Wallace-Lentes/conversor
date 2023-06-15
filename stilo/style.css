@@ -1,0 +1,42 @@
+body{
+    background-color: aqua;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+header{
+    color: red;
+    padding: 20px;
+    text-align: center;
+    background-size: 460px;
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCUFwIvOUWjTtB9g62dm50qgt1nZfOzPVMg&usqp=CAU); */
+}
+main{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* gap: 10px; */
+}
+.comprimento{
+    background-color: bisque;
+}
+.peso{
+    background-color: rgb(219, 32, 240);
+}
+.temperatura{
+    background-color:aquamarine;
+}
+
+footer{
+    color: antiquewhite;
+    background-color: rgb(7, 8, 8);
+    position: fixed;
+    padding: 1px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.pRodape{
+    text-align: center;
+}
