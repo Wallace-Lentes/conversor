@@ -1,3 +1,4 @@
+/* Estilização da pagina  */
 body{
     background-color: aqua;
     display: flex;
@@ -7,12 +8,15 @@ body{
     background-repeat: no-repeat;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMoLmAgAztKm0mC8mVJE7o7wdTFe92bqoB0xiKhQ1VgQQ6uVWUC3tbWnpe1S1cUPs2_s&usqp=CAU)
 }
+/* Estilização do conteúdo do cabeçalho */
 header{
     color: rgb(226, 204, 204);
     padding: 20px;
     text-align: center;
     background-size: 460px;
+    font-family: 'Righteous', cursive;
 }
+/* Estiizaçao de conteúdo do corpo da página */
 main{
     background-image: url(https://st3.depositphotos.com/2370557/18862/i/600/depositphotos_188623286-stock-photo-blue-abstract-color-gradient-background.jpg);
     padding: 40px;
@@ -20,30 +24,49 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 10px;
     border-radius: 8px;
+    font-family: 'Righteous', cursive;
 }
+/* Estas três seguintes são a Estilização de cores da palavras, fonte e a coloração da caixas de texto */
 p, label{
     color:rgb(226, 204, 204) ;
 }
 .corPalavra, .resultado{
     color:rgb(226, 204, 204) ;
 }
+select, input, button{
+    color: rgb(226, 204, 204);
+    background: transparent;
+    border-radius: 6px;
+    font-family: 'Righteous', cursive;
+}
+/* Estilização do botão de converter */
+.botao{
+    height: 30px;
+    border-radius: 6px;
+    margin: 1px;
+    background: transparent;
+  }
+  /* Alteração do botão ao passar o mouse por cima dele */
+  .botao:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+/* Estilizaçao do rodapé da página */
 footer{
     color: antiquewhite;
-    /* background-color: rgb(7, 8, 8); */
     position: fixed;
     padding: 1px;
     left: 0;
     bottom: 0;
     width: 100%;
 }
+/* Estilização e alinhameno do conteúdo do roapé */
 .pRodape{
     text-align: center;
+    font-family: 'Righteous', cursive;
 }
-
-
-
+/* Remove as setas de incremento/decremento nos campos de número  */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
