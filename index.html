@@ -5,73 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stilo/style.css">
-    <script src="./JS/script.js"></script>
-    <title>Individual</title>
+    <script src="./JS/script.js" defer></script>
+    <title>Conversor</title>
 </head>
 
 <body>
-
     <header>
         <h1>Conversor de Unidade</h1>
     </header>
     <main>
-        <div class="comprimento">
+        <div class="selecao">
+            <label for="categoria">Selecione a categoria de conversão:</label>
+            <select id="categoria" onchange="selecionarCategoria()">
+                <option value="comprimento">Comprimento</option>
+                <option value="peso">Peso</option>
+                <option value="temperatura">Temperatura</option>
+            </select>
+        </div>
+
+        <div id="comprimento" class="categoria">
             <p>Digite um valor para conversão e o tipo de medida.</p>
-            <input type="number">
-            <select name="medidas" id="PMC">
+            <input id="comprimentoEntrada" type="number">
+            <select name="comprimentoMedidas" id="comprimentoMedidas">
                 <option value="M">Metro</option>
                 <option value="C">Centimetro</option>
                 <option value="P">Polegada</option>
             </select>
-        
-            <p>Selecione uma medida para conversão.</p>
-            Metro<input type="checkbox">
-            Centimetro<input type="checkbox">
-            Polegada<input type="checkbox">
-            <input type="submit" value="Converter">
-            <div id="resultado"></div>
-        </div>
 
-        <div class="peso">
+            <p>Selecione uma medida para conversão.</p>
+            <div class="corPalavra">
+                Metro<input class="corPalavra" id="comprimentoMetro" type="checkbox"
+                    onclick="checkboxSelecionado('comprimento', 'comprimentoMetro')">
+                Centimetro<input class="corPalavra" id="comprimentoCentimetro" type="checkbox"
+                    onclick="checkboxSelecionado('comprimento', 'comprimentoCentimetro')">
+                Polegada<input class="corPalavra" id="comprimentoPolegada" type="checkbox"
+                    onclick="checkboxSelecionado('comprimento', 'comprimentoPolegada')">
+                <input type="submit" value="Converter" onclick="converter('comprimento')">
+            </div>
+        </div>
+        <div class="resultado" id="comprimentoResultado"></div>
+
+        <div id="peso" class="categoria">
             <p>Digite um valor para conversão e o tipo de medida.</p>
-            <input type="number">
-            <select name="peso" id="QGL">
+            <input id="pesoEntrada" type="number">
+            <select name="pesoMedidas" id="pesoMedidas">
                 <option value="Q">Quilogramas</option>
                 <option value="G">Gramas</option>
                 <option value="L">Libras</option>
-            </select>        
-            
-            <p>Selecione uma medida para conversão.</p>
-            Quilogramas<input type="checkbox">
-            Gramas<input type="checkbox">
-            Libras<input type="checkbox">
-            <input type="submit" value="Converter">
-            <div id="resultado"></div>
-        </div>
+            </select>
 
-        <div class="temperatura">
+            <p>Selecione uma medida para conversão.</p>
+            <div class="corPalavra">
+                Quilogramas<input class="corPalavra" id="pesoQuilogramas" type="checkbox"
+                    onclick="checkboxSelecionado('peso', 'pesoQuilogramas')">
+                Gramas<input class="corPalavra" id="pesoGramas" type="checkbox"
+                    onclick="checkboxSelecionado('peso', 'pesoGramas')">
+                Libras<input class="corPalavra" id="pesoLibras" type="checkbox"
+                    onclick="checkboxSelecionado('peso', 'pesoLibras')">
+                <input type="submit" value="Converter" onclick="converter('peso')">
+            </div>
+        </div>
+        <div class="resultado" id="pesoResultado"></div>
+
+        <div id="temperatura" class="categoria">
             <p>Digite um valor para conversão e o tipo de medida.</p>
-            <input type="number">
-            <select name="temperatura" id="PMC">
+            <input id="temperaturaEntrada" type="number">
+            <select name="temperaturaMedidas" id="temperaturaMedidas">
                 <option value="F">Fahrenheit</option>
                 <option value="C">Celcius</option>
                 <option value="K">Kelvin</option>
             </select>
-        
-            <p>Selecione uma medida para conversão.</p>
-            Fahrenheit<input type="checkbox">
-            Celcius<input type="checkbox">
-            Kelvin<input type="checkbox">
-            <input type="submit" value="Converter">
-            <div id="resultado"></div>
-        </div>
 
-            
+            <p>Selecione uma medida para conversão.</p>
+            <div class="corPalavra">
+                Fahrenheit<input class="corPalavra" id="temperaturaFahrenheit" type="checkbox"
+                    onclick="checkboxSelecionado('temperatura', 'temperaturaFahrenheit')">
+                Celcius<input class="corPalavra" id="temperaturaCelcius" type="checkbox"
+                    onclick="checkboxSelecionado('temperatura', 'temperaturaCelcius')">
+                Kelvin<input class="corPalavra" id="temperaturaKelvin" type="checkbox"
+                    onclick="checkboxSelecionado('temperatura', 'temperaturaKelvin')">
+                <input id="conversor" type="submit" value="Converter" onclick="converter('temperatura')">
+            </div>
         </div>
-       
+        <div class="resultado" id="temperaturaResultado"></div>
     </main>
     <footer>
-        <p class="pRodape">Socorro!!!</p>
+        <p class="pRodape">Direitos reservados.</p>
     </footer>
 </body>
 

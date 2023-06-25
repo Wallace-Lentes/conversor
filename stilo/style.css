@@ -1,36 +1,37 @@
 body{
     background-color: aqua;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center; */
+    align-items: center; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMoLmAgAztKm0mC8mVJE7o7wdTFe92bqoB0xiKhQ1VgQQ6uVWUC3tbWnpe1S1cUPs2_s&usqp=CAU)
 }
 header{
-    color: red;
+    color: rgb(226, 204, 204);
     padding: 20px;
     text-align: center;
     background-size: 460px;
-    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCUFwIvOUWjTtB9g62dm50qgt1nZfOzPVMg&usqp=CAU); */
 }
 main{
-    margin: 10px;
+    background-image: url(https://st3.depositphotos.com/2370557/18862/i/600/depositphotos_188623286-stock-photo-blue-abstract-color-gradient-background.jpg);
+    padding: 40px;
+    margin: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    /* gap: 10px; */
+    gap: 10px;
+    border-radius: 8px;
 }
-.comprimento{
-    background-color: bisque;
+p, label{
+    color:rgb(226, 204, 204) ;
 }
-.peso{
-    background-color: rgb(219, 32, 240);
+.corPalavra, .resultado{
+    color:rgb(226, 204, 204) ;
 }
-.temperatura{
-    background-color:aquamarine;
-}
-
 footer{
     color: antiquewhite;
-    background-color: rgb(7, 8, 8);
+    /* background-color: rgb(7, 8, 8); */
     position: fixed;
     padding: 1px;
     left: 0;
@@ -39,4 +40,12 @@ footer{
 }
 .pRodape{
     text-align: center;
+}
+
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; 
 }
