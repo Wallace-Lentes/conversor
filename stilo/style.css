@@ -6,7 +6,7 @@ body{
     align-items: center; 
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMoLmAgAztKm0mC8mVJE7o7wdTFe92bqoB0xiKhQ1VgQQ6uVWUC3tbWnpe1S1cUPs2_s&usqp=CAU)
+    background-image: url(./imagens/images.jpg)
 }
 /* Estilização do conteúdo do cabeçalho */
 header{
@@ -18,7 +18,7 @@ header{
 }
 /* Estiizaçao de conteúdo do corpo da página */
 main{
-    background-image: url(https://st3.depositphotos.com/2370557/18862/i/600/depositphotos_188623286-stock-photo-blue-abstract-color-gradient-background.jpg);
+    background-image: url(./imagens/imgMeio.jpg);
     padding: 40px;
     margin: 30px;
     display: flex;
